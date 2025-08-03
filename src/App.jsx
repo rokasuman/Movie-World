@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-import Hero from './Component /Hero';
-import Display from './Component /Display';
+import Hero from './components/Hero';
+import Display from './components/Display';
 
 
 
