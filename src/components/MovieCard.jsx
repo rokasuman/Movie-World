@@ -20,7 +20,7 @@ const Poster = "https://www.omdbapi.com/src/poster.jpg"
                 </div>
                 <div>
                     <div className="d-grid mt-3">
-                         <button className='btn btn-danger'>Action</button>
+                         <button className='btn btn-danger'>Delete</button>
                     </div>
                 </div>
 

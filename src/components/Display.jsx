@@ -10,7 +10,7 @@ const Display = () => {
         <div className="row">
             <div className="col">
                 <div className="btn-group" role="group" aria-label="Basic example">
-                <button type="button" classn="btn btn-primary">All</button>
+                <button type="button" className="btn btn-primary">All</button>
                 <button type="button" className="btn btn-warning">Drama</button>
              <button type="button" className="btn btn-danger">Action</button>
           </div>
@@ -18,7 +18,7 @@ const Display = () => {
 
             </div>
         </div>
-        <div className="row mt-5 mb-5">
+        <div className="row mt-5 mb-5 p-4">
             <div className="col d-flex justify-content-between flex-wrap gap-3">
                { 
                new Array(6).fill("").map((item, i) =>(

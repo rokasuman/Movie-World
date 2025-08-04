@@ -1,7 +1,17 @@
-import React from 'react'
+import React,{useEffect}from 'react'
 import MovieCard from './MovieCard'
+import { fetchFromAPI } from '../utils/axios'
 
 const Hero = () => {
+  useEffect (()=>{
+    fetchFromAPI();
+  }, []);
+
+  const fetchMoive = async str =>{
+    const movie = await fetchFromAPI(str);
+    console.log(movie)
+
+  }
 
   const movieStyle = {
     backgroundImage:`url("https://www.omdbapi.com/src/poster.jpg")`,
@@ -25,8 +35,8 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="input-group my-5">
-         <input type="text" className="form-control" placeholder="Search for Movies" aria-label="Search For Movies" aria-describedby="button-addon2" style={{width:"50rem"}} />
+        <div className="input-group my-5 w-50">
+         <input type="text" className="form-control" placeholder="Search for Movies" aria-label="Search For Movies" aria-describedby="button-addon2" />
           <button className="btn btn-danger" type="button" id="button-addon2">Button</button>
       
         </div>

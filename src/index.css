@@ -24,6 +24,11 @@ nav{
     max-width: 450px;
 
 }
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .movie-card-item img{
     width: 100;
     height: auto;
